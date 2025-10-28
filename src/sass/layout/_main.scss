@@ -87,7 +87,7 @@
         position: relative;
         &-1 {
             position: absolute;
-            bottom: -210px;
+            bottom: -410px;
             right: -260px;
             width: 100%;
             height: auto;
@@ -96,7 +96,7 @@
 
         &-2{
             position: absolute;
-            bottom: -220px;
+            bottom: -420px;
             right: -260px;
             width: 140%;
             height: auto;
@@ -106,8 +106,8 @@
         &-3 {
             position: absolute;
             bottom: 190px;
-            right: 360px;
-            width: 35%;
+            right: 660px;
+            width: 12.5vw;
             height: auto;
             z-index: 7
         }
@@ -115,16 +115,16 @@
         &-4 {
             position: absolute;
             bottom: -70px;
-            right: 360px;
-            width: 35%;
+            right: 660px;
+            width: 12.5vw;
             height: auto;
             z-index: 5
         }
         &-5 {
             position: absolute;
-            bottom: 445px;
-            right: 80px;
-            width: 35%;
+            bottom: 455px;
+            right: 380px;
+            width: 12.5vw;
             height: auto;
             z-index: 6;
         }
@@ -132,8 +132,8 @@
         &-6 {
             position: absolute;
             bottom: -70px;
-            right: 80px;
-            width: 35%;
+            right: 380px;
+            width: 12.5vw;
             height: auto;
             z-index: 4;
         }
@@ -141,8 +141,8 @@
         &-7 {
             position: absolute;
             bottom: 50px;
-            right: -200px;
-            width: 35%;
+            right: 100px;
+            width: 12.5vw;
             height: auto;
             z-index: 3;
         }
