@@ -1,0 +1,15 @@
+@use './abstracts/index' as abs;
+@use './vendors/vendors' as *;
+@use './base/index' as *;
+@use './components/index' as *;
+@use './layout/index' as *;
+@use './pages/index' as *;
+@use './themes/index' as *;
+@use './settings' as *;
+
+
+body {
+    background-color: abs.$body-color;
+    padding: 0;
+    margin: 0;
+}

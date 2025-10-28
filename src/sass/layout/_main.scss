@@ -1,0 +1,182 @@
+@use '../abstracts' as abs;
+
+.hero {
+    width: 100%;
+    margin-left: 45px;
+    padding: 0 20px;
+    display: flex;
+
+    &__content {
+        width: 50%;
+        margin-bottom: 200px;
+    }
+    
+    &__title {
+        font-size: 75px;
+        font-weight: 700;
+        color: abs.$primary-color;
+        margin-bottom: 20px;
+        font-family: abs.$secondary-font;
+        line-height: 100%;
+        margin-bottom: 50px;
+    }
+
+    &__description {
+        font-family: abs.$primary-font;
+        font-size: 20px;
+        color: rgb(158, 157, 157);
+        font-weight: 300;
+        line-height: 35px;
+        margin-bottom: 70px;
+    }
+    &__nav {
+        ul {
+            @include abs.reset-list();
+            display: flex;
+            gap: 32px;
+            position: relative;
+            li {
+                a {
+                    position: relative;
+                    padding-right: 20px;
+                    &.hero__button {
+                        text-decoration: none;
+                        font-size: 18px;
+                        font-weight: 400;
+                        color: abs.$primary-color;
+                        background-color: abs.$button-color;
+                        padding: 15px 30px;
+                        border-radius: 8px 8px 8px 0px;
+                        transition: background-color 0.5s ease, color 0.5s ease;
+                        &:hover {
+                            background-color: abs.$primary-color;
+                            color: abs.$button-color;
+                        }
+                    }
+                    &.hero__link {
+                        color: abs.$primary-color;
+                        width: 150px;
+                        font-size: 18px;
+                        font-weight: 400;
+                        transition: color 0.5s ease, color 0.5s ease;
+                        &:hover {
+                            color: rgb(158, 157, 157);
+                        }
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            top: 50%;
+                            right: -20px;
+                            transform: translateY(-50%);
+                            background: url('/src/img/arrow.svg') no-repeat center center;
+                            background-size: contain;
+                            width: 40px;
+                            height: 40px;
+                            margin-left: 20px;
+                            
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    &__image {
+        width: 50%;
+        position: relative;
+        &-1 {
+            position: absolute;
+            bottom: -210px;
+            right: -260px;
+            width: 100%;
+            height: auto;
+            z-index: 1;
+        }
+
+        &-2{
+            position: absolute;
+            bottom: -220px;
+            right: -260px;
+            width: 140%;
+            height: auto;
+            z-index: 2;
+        }
+
+        &-3 {
+            position: absolute;
+            bottom: 190px;
+            right: 360px;
+            width: 35%;
+            height: auto;
+            z-index: 7
+        }
+
+        &-4 {
+            position: absolute;
+            bottom: -70px;
+            right: 360px;
+            width: 35%;
+            height: auto;
+            z-index: 5
+        }
+        &-5 {
+            position: absolute;
+            bottom: 445px;
+            right: 80px;
+            width: 35%;
+            height: auto;
+            z-index: 6;
+        }
+
+        &-6 {
+            position: absolute;
+            bottom: -70px;
+            right: 80px;
+            width: 35%;
+            height: auto;
+            z-index: 4;
+        }
+
+        &-7 {
+            position: absolute;
+            bottom: 50px;
+            right: -200px;
+            width: 35%;
+            height: auto;
+            z-index: 3;
+        }
+    }
+}
+
+.items {
+    margin-top: 40px;
+    margin-left: 45px;
+    margin-bottom: 120px;
+    display: flex;
+    gap: 45px;
+    max-width: 50%;
+    justify-content: center;
+    align-items: center;
+    article {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+&__img {
+    width: 50px;
+    height: 50px;
+}
+&__title {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 100%;
+    color: abs.$primary-color;
+    margin-bottom: 10px;
+    font-family: abs.$primary-font;
+}
+
+    
+
+}
