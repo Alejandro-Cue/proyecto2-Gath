@@ -19,6 +19,7 @@
             height: auto;
     }
     &__nav {
+        margin-right: 104px;
         ul {
             @include abs.reset-list();
             display: flex;
